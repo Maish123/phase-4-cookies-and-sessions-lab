@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
       render json: article
     else
       render json:{ error: "Maximum pageview limit reached" }, status: :unauthorized
+    end
   end
 
   private
